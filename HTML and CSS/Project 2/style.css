@@ -23,14 +23,19 @@ body {
     background-image: url(images/tree4.jpg);
     min-height: 400px;
 }
+.pimg4 {
+    background-image: url(images/tree3.jpg);
+    min-height: 75%;
+}
 
 .pimg1,
 .pimg2,
-.pimg3 {
+.pimg3,.pimg4 {
     position: relative;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .ptext {
@@ -62,4 +67,16 @@ body {
 .section-dark{
     background-color: #313534;
     color:#f4f4f4
+}
+.pimg4{
+    background-attachment: fixed;
+    height:10%;
+}
+.section1{
+    padding: 50px 50px;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: rgb(15, 99, 99);
+    color: whitesmoke;
+    font-size: 40px;
 }
