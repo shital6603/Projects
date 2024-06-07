@@ -1,0 +1,82 @@
+html,
+body {
+    height: 100%;
+    margin: 0%;
+    font-size: 16px;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    line-height: 1.8em;
+    color: #666;
+}
+
+.pimg1 {
+    background-image: url(images/img1.avif);
+    min-height: 100%;
+}
+
+.pimg2 {
+    background-image: url(images/sky.jpg);
+    min-height: 400px;
+}
+
+.pimg3 {
+    background-image: url(images/tree4.jpg);
+    min-height: 400px;
+}
+.pimg4 {
+    background-image: url(images/tree3.jpg);
+    min-height: 75%;
+}
+
+.pimg1,
+.pimg2,
+.pimg3,.pimg4 {
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.ptext {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+
+
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+.textbg {
+    background-color: #313534;
+    color: white;
+    padding: 20px;
+}
+
+.section {
+    padding: 50px;
+    text-align: center;
+}
+/* .section-light{
+    background: #f4f4f4;
+    color:#666;
+} */
+.section-dark{
+    background-color: #313534;
+    color:#f4f4f4
+}
+.pimg4{
+    background-attachment: fixed;
+    height:10%;
+}
+.section1{
+    padding: 50px 50px;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: rgb(15, 99, 99);
+    color: whitesmoke;
+    font-size: 40px;
+}
