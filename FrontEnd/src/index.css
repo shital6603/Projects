@@ -1,0 +1,67 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@custom-variant TV (@media (max-width: 2560px));
+@custom-variant large-desktop (@media (max-width: 1600px));
+@custom-variant mid-desktop (@media (max-width: 1200px));
+@custom-variant small-desktop (@media (max-width: 1024px));
+@custom-variant tablet (@media (max-width: 768px));
+@custom-variant small-tablet (@media (max-width: 640px));
+@custom-variant large-mobile (@media (max-width: 450px));
+@custom-variant mid-mobile (@media (max-width: 375px));
+@custom-variant small-mobile (@media (max-width: 325px));
+
+@theme
+{
+    --color-sidebar-bg: #f0f4f8;
+    --color-sidebar-button-bg: #D7DEDC;
+    --color-sidebar-button-text: #333333;
+    --color-header-bg: #e8e8e8;
+    --color-header-text: #333333;
+    --color-main-bg: #ffffff;
+    --color-todo-bg: #f9f9f9;
+    --color-todo-text: #333333;
+    --color-modal-bg: #ffffff;
+    --color-modal-button-bg: #4a90e2;
+    --color-modal-button-text: #ffffff;
+    --color-input-bg: #ffffff;
+    --color-input-text: #333333;
+
+    --color-sidebar-bg-dark: #2d3439;
+    --color-sidebar-button-bg-dark: #1c2025;
+    --color-sidebar-button-text-dark: #f0f0f0;
+    --color-header-bg-dark: #24292e;
+    --color-header-text-dark: #f0f0f0;
+    --color-main-bg-dark: #1c2025;
+    --color-todo-bg-dark: #2d3439;
+    --color-todo-text-dark: #f0f0f0;
+    --color-modal-bg-dark: #24292e;
+    --color-modal-button-bg-dark: #5aa9e6;
+    --color-modal-button-text-dark: #f0f0f0;
+    --color-input-bg-dark: #2d3439;
+    --color-input-text-dark: #f0f0f0;
+}
+
+.leftToRight {
+    animation: left-right 200ms ease-out;
+}
+
+.topToBottom {
+    animation: top-bottom 1000ms linear;
+}
+
+@keyframes left-right {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes top-bottom {
+    100% {
+        transform: scale(0);
+    }
+}
